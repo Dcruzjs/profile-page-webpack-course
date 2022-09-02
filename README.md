@@ -1,1 +1,1 @@
-# js-portfolio
+# js-portfolio-webpack-course
