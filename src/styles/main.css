@@ -1,4 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
+/*@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";*/
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../assets/fonts/ubuntu-regular.woff2") format('woff2'),
+		url("../assets/fonts/ubuntu-regular.woff") format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
 
 html {
 	font-family: sans-serif;
@@ -228,11 +235,11 @@ body {
 }
 
 .About {
-  align-items: center;
-  display: grid;
-  grid-template-columns: minmax(auto, 1024px);
-  justify-content: center;
-  padding: 4em 0;
+	align-items: center;
+	display: grid;
+	grid-template-columns: minmax(auto, 1024px);
+	justify-content: center;
+	padding: 4em 0;
 }
 
 .card {
@@ -289,12 +296,12 @@ body {
 }
 
 .card ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .card li {
-  display: inline-block;
-  margin: 0 1em 0 0
+	display: inline-block;
+	margin: 0 1em 0 0
 }
 
 .card_social {
@@ -305,6 +312,7 @@ body {
 	margin: 0 auto;
 	padding: 1em 0;
 }
+
 .card_social img {
 	width: 32px;
 	height: 32px;
@@ -315,33 +323,35 @@ body {
 }
 
 .circle {
-  position: relative;
+	position: relative;
 }
 
 .circle svg {
-  fill: none;
-  stroke: #8a3ab9;
-  stroke-linecap: round;
-  stroke-width: 3;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-  animation: stroke-draw 6s ease-out infinite alternate;
+	fill: none;
+	stroke: #8a3ab9;
+	stroke-linecap: round;
+	stroke-width: 3;
+	stroke-dasharray: 1;
+	stroke-dashoffset: 0;
+	animation: stroke-draw 6s ease-out infinite alternate;
 }
+
 .circle img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @keyframes stroke-draw {
-  from {
-    stroke: #8a3ab9;
-    stroke-dasharray: 1;
-  }
-  to {
-    stroke: #cd486b;
-    transform: rotate(180deg);
-    stroke-dasharray: 8;
-  }
+	from {
+		stroke: #8a3ab9;
+		stroke-dasharray: 1;
+	}
+
+	to {
+		stroke: #cd486b;
+		transform: rotate(180deg);
+		stroke-dasharray: 8;
+	}
 }
